@@ -2,6 +2,8 @@
 
 `consensus_denoise.py` builds a new CryoSPARC exposure result by taking the pixelwise minimum across the denoised micrographs from multiple matching denoising jobs.
 
+This was motivated by observations described in [this thread](https://discuss.cryosparc.com/t/denoiser-or-patch-motion-should-output-training-mics-as-a-separate-slot/16928/6?u=olibclarke)  - basically that individual CS denoise jobs seem to give stochastic results for individual particles.
+
 It matches rows by micrograph `uid`, preserves the non-denoised slots from the first source output, and writes new denoised MRC files under the created External job directory.
 
 ## Requirements
@@ -88,6 +90,8 @@ The script creates a CryoSPARC External job and writes:
 Only the denoised slot is rewritten. Other slots are preserved from the first source output.
 
 Example - (single denoise vs consensus of 5 with highpass & local contrast enhancement):
+
+![gif](./two_images_3_slow.gif)
 
 
 ## Troubleshooting
