@@ -6,6 +6,8 @@ This was motivated by observations described in [this thread](https://discuss.cr
 
 It matches rows by micrograph `uid`, preserves the non-denoised slots from the first source output, and writes new denoised MRC files under the created External job directory.
 
+Script was written with the assistance of the Codex LLM; I have tested it on a few different datasets & machines, but please report bugs if you encounter them.
+
 ## Requirements
 
 - Python 3.8+
