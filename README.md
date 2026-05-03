@@ -1,6 +1,6 @@
 # Consensus Denoise
 
-`consensus_denoise.py` builds a new CryoSPARC exposure result by taking the pixelwise minimum across the denoised micrographs from multiple matching denoising jobs.
+`consensus_denoise.py` is a [CryoSPARC Tools](https://tools.cryosparc.com/intro.html) script builds a new CryoSPARC exposure result by taking the pixelwise minimum across the denoised micrographs from multiple matching denoising jobs.
 
 This was motivated by observations described in [this thread](https://discuss.cryosparc.com/t/denoiser-or-patch-motion-should-output-training-mics-as-a-separate-slot/16928/6?u=olibclarke)  - basically that individual CS denoise jobs seem to give stochastic results for individual particles.
 
