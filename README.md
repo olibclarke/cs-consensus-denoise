@@ -47,14 +47,8 @@ python3 consensus_denoise.py P3 W2 J101 J102 J103
 
 - `P3` is the project UID.
 - `W2` is the workspace where the External job will be created.
-- `J101 J102 J103` are denoising jobs run on the same micrograph set.
-- The first source is the passthrough reference dataset.
-
-If the denoised output lives in a specific exposure group:
-
-```bash
-python3 consensus_denoise.py P3 W2 J101:micrographs J102:micrographs J103:micrographs
-```
+- `J101 J102 J103` are denoising jobs run on the same micrograph set (train several independent models - I usually do five).
+  
 
 ## Common Options
 
