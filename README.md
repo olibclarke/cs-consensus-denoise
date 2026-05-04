@@ -76,6 +76,13 @@ Apply CLAHE after consensus (local contrast enhancement):
 python3 consensus_denoise.py P3 W2 J101 J102 J103 --clahe
 ```
 
+
+Apply highpass pre-consensus & CLAHE after consensus:
+
+```bash
+python3 consensus_denoise.py P3 W2 J101 J102 J103 --highpass --clahe
+```
+
 ## Outputs
 
 The script creates a CryoSPARC External job and writes:
