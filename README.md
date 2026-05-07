@@ -99,7 +99,7 @@ Example - (single denoise vs consensus of 5 with highpass & local contrast enhan
 
 ## Troubleshooting
 
-- If you see a missing dependency error, install the listed package in the same environment where you run the script.
+- If you see a missing dependency error, install the listed package in the same environment where you run the script (usually a conda environment specifically set up for cryosparc tools).
 - If `instance_info.json` is missing, pass `--instance-info /path/to/instance_info.json`.
 - If source jobs do not share the same micrograph `uid` set, the script will stop.
 - If performance is limited by shared storage, try `--workers 1` or `2` instead of higher values.
